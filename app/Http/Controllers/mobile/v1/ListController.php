@@ -30,7 +30,7 @@ class ListController extends Controller
             'message' => 'retrieved successfully.'
         ];
 
-        // delay the data return
+        // delay the return data
         sleep(2);
 
         return response()->json($content, 200, $this->header);
